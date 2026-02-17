@@ -8,7 +8,7 @@ export default function AboutDesigner() {
 
       <div className="container mx-auto px-6 lg:px-20 grid lg:grid-cols-2 gap-16 items-center relative z-10">
 
-        {/* TEXTO */}
+        {/* text */}
         <div className="space-y-8">
 
           <span className="text-xs tracking-[0.3em] text-[#C6A343] uppercase">
@@ -26,12 +26,12 @@ export default function AboutDesigner() {
           </h2>
 
           <p className="text-gray-400 leading-relaxed max-w-lg">
-            Por trás da Hécate está uma designer apaixonada por livros, arte e 
+            Por trás da Hécate está uma designer apaixonada arte e 
             narrativas visuais. Cada projeto é tratado de forma única, com atenção 
             aos detalhes e foco na identidade do autor.
           </p>
 
-          {/* Linha dourada */}
+          {/* gold line */}
           <div className="w-40 h-px bg-[#C6A343] opacity-50" />
 
           <p className="text-xs tracking-[0.4em] text-[#C6A343] uppercase">
@@ -39,14 +39,14 @@ export default function AboutDesigner() {
           </p>
         </div>
 
-        {/* FOTO + MOLDURA */}
+        {/* photo */}
         <div className="relative flex justify-center">
 
-          {/* Moldura glow */}
+          {/*  glow */}
           <div className="absolute w-[320px] h-105 border border-[#C6A343] rotate-3 opacity-40" />
           <div className="absolute w-[320px] h-105 border border-[#C6A343] -rotate-2 opacity-40" />
 
-          {/* Foto */}
+          {/* photo */}
           <div className="relative w-[320px] h-105">
             <Image
               src="/images/designer.jpg"

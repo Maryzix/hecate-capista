@@ -8,10 +8,10 @@ export default function Navbar() {
 
       <div className="mx-auto flex max-w-7xl items-center justify-between px-8 py-6">
         
-        {/* Logo + Nome */}
+        {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
           <Image
-            src="/logo.png"
+            src="/images/logo.png"
             alt="Hécate"
             width={100}
             height={40}
@@ -23,19 +23,19 @@ export default function Navbar() {
 
         {/* Menu */}
         <nav className="hidden md:flex items-center gap-10 text-sm uppercase tracking-[0.2em] text-gray-300">
-          <Link href="/" className="hover:text-amber-400 transition duration-400">
+          <Link href="#hero" className="hover:text-amber-400 transition duration-400">
             Início
           </Link>
-          <Link href="/sobre" className="hover:text-amber-400 transition duration-400">
+          <Link href="#about" className="hover:text-amber-400 transition duration-400">
             Sobre
           </Link>
-          <Link href="/designer" className="hover:text-amber-400 transition duration-400">
+          <Link href="/aboutdesigner" className="hover:text-amber-400 transition duration-400">
             Designer
           </Link>
-          <Link href="/capas" className="hover:text-amber-400 transition duration-400">
+          <Link href="#covers" className="hover:text-amber-400 transition duration-400">
             Capas
           </Link>
-          <Link href="/personalizado" className="hover:text-amber-400 transition duration-400">
+          <Link href="#customs" className="hover:text-amber-400 transition duration-400">
             Personalizada
           </Link>
         </nav>
