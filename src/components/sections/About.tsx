@@ -1,5 +1,4 @@
 import Counter from "@/components/ui/Counter";
-import AboutParticles from "@/components/ui/AboutParticles";
 
 
 
@@ -15,9 +14,7 @@ export default function About() {
      <div className="absolute top-0 left-0 w-full h-px gold-line opacity-80" />
 <div className="absolute bottom-0 left-0 w-full h-px gold-line opacity-80" />
 
-<AboutParticles />
 
-      {/* Degradê lateral escuro */}
       <div className="absolute inset-0 bg-linear-to-r from-[#1a1205]/40 via-transparent to-transparent pointer-events-none" />
 
       {/* Glow radial dourado */}
