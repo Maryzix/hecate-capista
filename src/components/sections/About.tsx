@@ -1,63 +1,82 @@
+import Counter from "@/components/ui/Counter";
+import AboutParticles from "@/components/ui/AboutParticles";
+
+
+
 export default function About() {
   return (
     <section
       id="sobre"
-      className="relative overflow-hidden bg-[#0a0a0a] text-white py-32 px-6"
+      className="relative overflow-hidden bg-[#0b0b0b] text-white py-32 px-6"
     >
-      {/* Glow radial dourado no fundo */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(198,163,67,0.15),transparent_40%)] pointer-events-none" />
+   
+      {/*TOP/BOTTOM */}
+     
+     <div className="absolute top-0 left-0 w-full h-px gold-line opacity-80" />
+<div className="absolute bottom-0 left-0 w-full h-px gold-line opacity-80" />
 
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-20 items-center relative z-10">
+<AboutParticles />
+
+      {/* Degradê lateral escuro */}
+      <div className="absolute inset-0 bg-linear-to-r from-[#1a1205]/40 via-transparent to-transparent pointer-events-none" />
+
+      {/* Glow radial dourado */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_left,rgba(198,163,67,0.15),transparent_50%)] pointer-events-none" />
+
+
+      <div className="relative z-10 max-w-6xl mx-auto grid md:grid-cols-2 items-center">
         
-        {/* LADO ESQUERDO */}
+        {/* left */}
         <div className="relative">
-          <span className="text-gold tracking-[0.4em] text-xs uppercase">
+          <span className="text-[#C6A343] tracking-[0.4em] text-xl uppercase">
             Sobre
           </span>
 
-          <div className="w-24 h-px bg-gold/60 my-6" />
+          <div className="w-24 h-px bg-[#C6A343]/60 my-3" />
 
-          {/* Número gigante no fundo */}
-          <h2 className="absolute -top-10 left-0 text-[180px] font-serif text-gold/5 select-none">
-            01
-          </h2>
         </div>
 
-        {/* LADO DIREITO */}
+        {/* right */}
         <div>
-          <h2 className="text-4xl md:text-5xl font-serif text-gold leading-tight">
+          <h2 className="text-5xl md:text-6xl font-serif leading-tight">
             Onde arte encontra <br />
-            <span className="italic text-white">narrativa</span>
+            <span className="italic text-[#C6A343]">narrativa</span>
           </h2>
 
           <p className="mt-6 text-gray-400 leading-relaxed max-w-lg">
-            Hécate Capista nasceu da paixão por transformar histórias em
+            Hécate nasceu da paixão por transformar histórias em
             imagens. Cada capa é criada com intenção, conceito e identidade
             única, pensada para transmitir a essência do livro antes mesmo da
             leitura.
           </p>
 
-          {/* Métricas */}
-          <div className="flex gap-12 mt-12 border-t border-white/10 pt-8">
+          {/* numbers */}
+          <div className="flex gap-12 mt-16 pt-10 border-t border-white/10">
             
-            <div className="pr-8 border-r border-white/10">
-              <p className="text-3xl font-serif text-gold">100+</p>
+            <div className="pr-10 border-r border-white/10">
+              <p className="text-3xl font-serif text-[#C6A343]">
+                <Counter value={25} suffix="+" />
+              </p>
               <span className="text-xs tracking-widest text-gray-500 uppercase">
                 Capas Criadas
               </span>
             </div>
 
-            <div className="pr-8 border-r border-white/10">
-              <p className="text-3xl font-serif text-gold">50+</p>
+            <div className="pr-10 border-r border-white/10">
+              <p className="text-3xl font-serif text-[#C6A343]">
+                <Counter value={10} suffix="+" />
+              </p>
               <span className="text-xs tracking-widest text-gray-500 uppercase">
                 Autores Atendidos
               </span>
             </div>
 
             <div>
-              <p className="text-3xl font-serif text-gold">3+</p>
+               <p className="text-3xl font-serif text-[#C6A343]">
+                <Counter value={3} suffix="+" />
+              </p>
               <span className="text-xs tracking-widest text-gray-500 uppercase">
-                Anos de Experiência
+                Anos de Experiência como Designer
               </span>
             </div>
 
