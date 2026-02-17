@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
+
 export default function Navbar() {
   return (
     <header className="absolute top-0 left-0 w-full z-50 bg-black/30 backdrop-blur-md">
