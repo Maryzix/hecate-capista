@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function AboutDesigner() {
   return (
-    <section className="relative bg-[#0B0D12] text-white py-32 overflow-hidden">
+    <section className="relative bg-[#0B0D12] text-white py-32 overflow-hidden" id="aboutdesigner">
 
       <div className="container mx-auto px-6 lg:px-20 grid lg:grid-cols-2 gap-16 items-center relative z-10">
 

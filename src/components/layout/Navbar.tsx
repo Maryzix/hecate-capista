@@ -23,19 +23,19 @@ export default function Navbar() {
 
         {/* Menu */}
         <nav className="hidden md:flex items-center gap-10 text-sm uppercase tracking-[0.2em] text-gray-300">
-          <Link href="#hero" className="hover:text-amber-400 transition duration-400">
+          <Link href="/#hero" className="hover:text-amber-400 transition duration-400">
             Início
           </Link>
-          <Link href="#about" className="hover:text-amber-400 transition duration-400">
+          <Link href="/#about" className="hover:text-amber-400 transition duration-400">
             Sobre
           </Link>
-          <Link href="/aboutdesigner" className="hover:text-amber-400 transition duration-400">
+          <Link href="/#aboutdesigner" className="hover:text-amber-400 transition duration-400">
             Designer
           </Link>
-          <Link href="#covers" className="hover:text-amber-400 transition duration-400">
+          <Link href="/#portfolio" className="hover:text-amber-400 transition duration-400">
             Capas
           </Link>
-          <Link href="#customs" className="hover:text-amber-400 transition duration-400">
+          <Link href="/#ordersection" className="hover:text-amber-400 transition duration-400">
             Personalizada
           </Link>
         </nav>

@@ -7,7 +7,6 @@ import Reveal from "@/components/ui/Reveal";
 export default function Home() {  
   return (
     <main className="relative min-h-screen flex items-center justify-center text-white overflow-hidden">
-     
 
       {/* Background Image */}
       <Image
@@ -36,7 +35,7 @@ export default function Home() {
 
         <button className="mt-10 px-8 py-3 bg-amber-400 text-black font-semibold uppercase tracking-wider hover:bg-amber-300 transition duration-300 rounded-sm shadow-lg shadow-amber-500/20"
 >
-          Ver Capas Disponíveis
+          <a href="/#portfolio"> Ver Capas Disponíveis</a>
         </button>
       </Reveal>
       </section>
