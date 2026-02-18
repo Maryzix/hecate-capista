@@ -75,7 +75,7 @@ export default function Footer() {
           {/* Desenvolvido por */}
           <div>
             <h3 className="text-[#C6A343] text-lg font-serif mb-6 tracking-wider">
-              Desenvolvido por
+              Desenvolvido por Mary Lindsen
             </h3>
 
             <div className="flex justify-center md:justify-start gap-6 text-gray-400">
