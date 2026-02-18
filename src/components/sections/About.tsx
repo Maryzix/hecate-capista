@@ -66,7 +66,7 @@ export default function About() {
 
             <div>
               <p className="text-2xl sm:text-3xl font-serif text-[#C6A343]">
-                <Counter value={3} suffix="+" />
+                <Counter value={2} suffix="+" />
               </p>
               <span className="text-xs tracking-widest text-gray-500 uppercase">
                 Anos de Experiência como Designer
