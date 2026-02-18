@@ -2,9 +2,9 @@
 
 import { Instagram, MessageCircle } from "lucide-react";
 
-const HECA_WHATS = "5551991090199"; 
-const DESIGNER_WHATS = "5551991090199"; 
-const MARY_WHATS = "5551985503101"; 
+const HECA_WHATS = "5551991090199";
+const DESIGNER_WHATS = "5551991090199";
+const MARY_WHATS = "5551985503101";
 
 export default function Footer() {
   return (
@@ -12,31 +12,33 @@ export default function Footer() {
       <div className="container mx-auto px-6 lg:px-20 py-14">
 
         {/* Grid */}
-        <div className="grid md:grid-cols-3 gap-12">
+        <div className="grid md:grid-cols-3 gap-12 text-center md:text-left">
 
+          {/* Hécate */}
           <div>
             <h3 className="text-[#C6A343] text-lg font-serif mb-6 tracking-wider">
-              Hécate 
+              Hécate
             </h3>
 
-            <div className="space-y-4 text-sm text-gray-400">
-
+            <div className="flex justify-center md:justify-start gap-6 text-gray-400">
               <a
                 href="https://instagram.com/hecatecapista"
                 target="_blank"
-                className="flex items-center gap-3 hover:text-[#C6A343] transition"
+                rel="noopener noreferrer"
+                aria-label="Instagram Hécate"
+                className="hover:text-[#C6A343] transition"
               >
-                <Instagram size={18} />
-                @hecatecapista
+                <Instagram size={20} />
               </a>
 
               <a
                 href={`https://wa.me/${HECA_WHATS}`}
                 target="_blank"
-                className="flex items-center gap-3 hover:text-[#C6A343] transition"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp Hécate"
+                className="hover:text-[#C6A343] transition"
               >
-                <MessageCircle size={18} />
-                WhatsApp Hécate
+                <MessageCircle size={20} />
               </a>
             </div>
           </div>
@@ -47,52 +49,54 @@ export default function Footer() {
               Designer
             </h3>
 
-            <div className="space-y-4 text-sm text-gray-400">
-
+            <div className="flex justify-center md:justify-start gap-6 text-gray-400">
               <a
                 href="https://instagram.com/carolinaluizdesigner"
                 target="_blank"
-                className="flex items-center gap-3 hover:text-[#C6A343] transition"
+                rel="noopener noreferrer"
+                aria-label="Instagram Designer"
+                className="hover:text-[#C6A343] transition"
               >
-                <Instagram size={18} />
-                @carolinaluizdesigner
+                <Instagram size={20} />
               </a>
 
               <a
                 href={`https://wa.me/${DESIGNER_WHATS}`}
                 target="_blank"
-                className="flex items-center gap-3 hover:text-[#C6A343] transition"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp Designer"
+                className="hover:text-[#C6A343] transition"
               >
-                <MessageCircle size={18} />
-                WhatsApp Designer
+                <MessageCircle size={20} />
               </a>
             </div>
           </div>
 
-
+          {/* Desenvolvido por */}
           <div>
             <h3 className="text-[#C6A343] text-lg font-serif mb-6 tracking-wider">
               Desenvolvido por
             </h3>
 
-            <div className="space-y-4 text-sm text-gray-400">
-
+            <div className="flex justify-center md:justify-start gap-6 text-gray-400">
               <a
                 href="https://instagram.com/marynotjane_"
                 target="_blank"
-                className="flex items-center gap-3 hover:text-[#C6A343] transition"
+                rel="noopener noreferrer"
+                aria-label="Instagram Mary Lindsen"
+                className="hover:text-[#C6A343] transition"
               >
-                <Instagram size={18} />
-                @marynotjane_
+                <Instagram size={20} />
               </a>
 
               <a
                 href={`https://wa.me/${MARY_WHATS}`}
                 target="_blank"
-                className="flex items-center gap-3 hover:text-[#C6A343] transition"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp Mary Lindsen"
+                className="hover:text-[#C6A343] transition"
               >
-                <MessageCircle size={18} />
-                WhatsApp Mary
+                <MessageCircle size={20} />
               </a>
             </div>
           </div>

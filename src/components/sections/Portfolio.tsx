@@ -7,38 +7,32 @@ const WHATSAPP_NUMBER = "5551991090199";
 
 const covers = [
   {
-    title: "O chamado da morte",
-    subtitle: "Capa com um corvo na frente de um cenário sombrio",
+    title: "O Chamado Da Morte",
     price: "R$ 110,00",
     image: "/images/capa1.jpg",
   },
   {
-    title: "O que me espera do lado de fora?",
-    subtitle: "Capa com um cenário urbano chuvoso e uma figura misteriosa",
+    title: "O Que Me Espera Do Lado De Fora?",
     price: "R$ 110,00",
     image: "/images/capa2.jpg",
   },
   {
-    title: "Nada além do universo",
-    subtitle: "Capa com um cenário espacial e uma atmosfera misteriosa",
+    title: "Nada Além Do Universo",
     price: "R$ 110,00",
     image: "/images/capa3.jpg",
   },
   {
-    title: "A boneca de pano",
-    subtitle: "Capa com uma boneca de pano em um cenário sombrio e assustador",
+    title: "A Boneca De Pano",
     price: "R$ 110,00",
     image: "/images/capa4.jpg",
   },
   {
-    title: "Objetos cortantes",
-    subtitle: "Capa com um cenário de floresta e uma figura misteriosa segurando uma faca",
+    title: "Objetos Cortantes",
     price: "R$ 110,00",
     image: "/images/capa5.jpg",
   },
   {
     title: "Hemoglobina",
-    subtitle: "Capa com um cenário de laboratório e uma figura misteriosa segurando um frasco de sangue",
     price: "R$ 110,00",
     image: "/images/capa6.jpg",
   },
@@ -81,8 +75,6 @@ export default function Portfolio() {
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif text-[#C6A343] mt-3">
               Capas disponíveis
             </h2>
-              <p className="text-xl sm:text-xl md:text-xl font-serif text-[#f5db94] mt-3">Alteração gratuita de nome do livro, fonte e nome do autor/editora</p>
-              <p className="text-xl sm:text-xl md:text-xl font-serif text-[#f5db94]">Alteração de cor, elementos e design, taxa adicional *consultar valores*</p>
           </div>
 
           <div className="hidden sm:flex gap-4">
@@ -122,14 +114,11 @@ export default function Portfolio() {
                   {cover.price}
                 </span>
               </div>
-
-              <h3 className="mt-6 text-base md:text-lg">
-                {cover.title}
-              </h3>
-
-              <p className="text-gray-400 text-sm mt-2">
-                {cover.subtitle}
-              </p>
+              
+              <p className="mt-4 text-lg font-serif ">{cover.title}</p>
+              <p className="text-[14px] mt-5 sm:text-xs md:text-xs font-serif text-[#f5db94]">*Alteração gratuita do título do livro, fonte e nome do autor/editora.*</p>
+              <p className="text-[14px] mt-2 sm:text-xs md:text-xs font-serif text-[#f5db94]">*Mudanças de cor, elementos ou redesign podem ter custo adicional. Consulte valores.*</p>
+        
 
               <button
                 onClick={() => handleWhatsApp(cover.title)}
