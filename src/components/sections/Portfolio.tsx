@@ -8,32 +8,32 @@ const WHATSAPP_NUMBER = "5551991090199";
 const covers = [
   {
     title: "O Chamado Da Morte",
-    price: "R$ 110,00",
+    price: "R$ 100,00",
     image: "/images/capa1.jpg",
   },
   {
     title: "O Que Me Espera Do Lado De Fora?",
-    price: "R$ 110,00",
+    price: "R$ 100,00",
     image: "/images/capa2.jpg",
   },
   {
     title: "Nada Além Do Universo",
-    price: "R$ 110,00",
+    price: "R$ 100,00",
     image: "/images/capa3.jpg",
   },
   {
     title: "A Boneca De Pano",
-    price: "R$ 110,00",
+    price: "R$ 100,00",
     image: "/images/capa4.jpg",
   },
   {
     title: "Objetos Cortantes",
-    price: "R$ 110,00",
+    price: "R$ 100,00",
     image: "/images/capa5.jpg",
   },
   {
     title: "Hemoglobina",
-    price: "R$ 110,00",
+    price: "R$ 100,00",
     image: "/images/capa6.jpg",
   },
 ];
