@@ -36,6 +36,16 @@ const covers = [
     price: "R$ 100,00",
     image: "/images/capa6.jpg",
   },
+   {
+    title: "Obsessão Fatal",
+    price: "R$ 100,00",
+    image: "/images/capa7.jpg",
+  },
+   {
+    title: "Fauno - O culto da floresta viva",
+    price: "R$ 100,00",
+    image: "/images/capa8.jpg",
+  },
 ];
 
 export default function Portfolio() {
